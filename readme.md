@@ -1,36 +1,23 @@
-# Ping CRM React
+# Requisitos
 
-A demo application to illustrate how [Inertia.js](https://inertiajs.com/) works with [Laravel](https://laravel.com/) and [React](https://reactjs.org/).
-
-> This is a port of the original [Ping CRM](https://github.com/inertiajs/pingcrm) written in Laravel and Vue.
-
-![](https://raw.githubusercontent.com/landish/pingcrm-react/master/screenshot.png)
+nginx
+redis
+composer
+mariadb
 
 ## Installation
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/landish/pingcrm-react.git
-cd pingcrm-react
+git clone https://github.com/DiegoHernandezM/crc.git
+cd crc
 ```
 
 Install PHP dependencies:
 
 ```sh
 composer install
-```
-
-Install NPM dependencies:
-
-```sh
-npm install
-```
-
-Build assets:
-
-```sh
-npm run dev
 ```
 
 Setup configuration:
@@ -45,11 +32,7 @@ Generate application key:
 php artisan key:generate
 ```
 
-Create an SQLite database. You can also use another database (MySQL, Postgres), simply update your configuration accordingly.
-
-```sh
-touch database/database.sqlite
-```
+Create an MariaDB database. You can also use another database (MySQL, etc), simply update your configuration accordingly.
 
 Run database migrations:
 
@@ -63,27 +46,13 @@ Run database seeder:
 php artisan db:seed
 ```
 
-Run artisan server:
+Run:
 
 ```sh
-php artisan serve
-```
-
-You're ready to go! [Visit Ping CRM](http://127.0.0.1:8000/) in your browser, and login with:
-
-- **Username:** johndoe@example.com
-- **Password:** secret
-
-## Running tests
-
-To run the Ping CRM tests, run:
-
-```
-phpunit
+configure your nginx to repo
 ```
 
 ## Credits
 
-- Original work by Jonathan Reinink (@reinink) and contributors
-- Port to Ruby on Rails by Georg Ledermann (@ledermann)
-- Port to React by Lado Lomidze (@landish)
+- TEAM OMS Cuidado con el perro
+- Solo para fies de cosultar codigo
